@@ -8,6 +8,11 @@
 <script>
 export default {
   name: 'note-selector',
-  props: ['note']
-};
+  props: ['note', 'selectedNoteId'],
+  methods: {
+    setSelectedNoteId: function(noteId) {
+      this.$emit("selectNote", noteId)
+    }
+  }
+}
 </script>
