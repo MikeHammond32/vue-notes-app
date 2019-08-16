@@ -7,6 +7,7 @@
 
 <script>
 export default {
-  name: 'note-selector'
-}
+  name: 'note-selector',
+  props: ['note']
+};
 </script>
